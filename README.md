@@ -1,6 +1,26 @@
 # ***Java 11*** 新特性
 
-> ***Java 11*** 包含 ***9 - 11*** 的全部更新
+> JDK 11 于2018年9月25日发布。Java 11 包含如下更新：
+> 
+> - JEP 181：针对嵌套成员的访问控制
+> - JEP 309：动态类文件常量
+> - JEP 315：利用 Aarch64 的特有架构改进其上的性能
+> - JEP 318：Epsilon：无操作垃圾收集器
+> - JEP 320：移除 Java EE 和 CORBA 模块
+> - JEP 321：HTTP Client
+> - JEP 323：lambda参数的局部变量语法
+> - JEP 324：支持 Curve25519 和 Curve 448 密钥
+> - JEP 327：Unicode 10
+> - JEP 328：添加Java飞行记录器（JFR），其用于创建性能分析记录
+> - JEP 329：ChaCha20 和 Poly1305 加密算法
+> - JEP 330：运行单文件源码程序
+> - JEP 331：低开销堆分析
+> - JEP 332：支持 TLS 1.3
+> - JEP 333：添加ZGC（一个可扩展的低延迟垃圾收集器）
+> - JEP 335：弃用 Nashorn JavaScript 引擎
+> - JEP 336：弃用 Pack200 相关的工具及 API
+>
+> 摘录自[维基百科](https://zh.wikipedia.org/wiki/Java%E7%89%88%E6%9C%AC%E6%AD%B7%E5%8F%B2#Java_SE_11)
 
 ## 自动类型推导
 
@@ -90,6 +110,8 @@ var transferToResult = byteArrayInputStream.transferTo(fileOutputStream);
 ```
 
 ## Http Client API
+
+> 代码中演示接口来自 [sspai](https://sspai.com/) 侵删
 
 ```java
 var request = HttpRequest.newBuilder()
